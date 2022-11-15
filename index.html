@@ -1,3 +1,8 @@
+
+xClover <mikaivoets@gmail.com>
+9 nov. 2022 15:10 (6 dagen geleden)
+aan mij
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -11,7 +16,7 @@
 
 body {
 margin: 0;
-  font-family: Calibri, sans-serif;
+  font-family: Calibri;
 background-image: url('https://media.discordapp.net/attachments/989268312036896818/1037324066283081738/cIover_pink_floyd_10e17e02-66c0-4652-9905-18cbca42cc21.png');
 }
 .topnav {
@@ -29,12 +34,13 @@ background-image: url('https://media.discordapp.net/attachments/9892683120368968
 }
 
 .topnav a:hover {
+transition-duration: 0.3s;
   background-color: #ddd;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #086DAA;
   color: white;
 }
 header {
@@ -45,55 +51,61 @@ header {
   color: white;
 }
 
-header:hover {
-    color: red;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 400px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 article {
   float: left;
   padding: 20px;
-  width: 70%;
+  width: 100%;
   background-color: #f1f1f1;
-  height: 400px; /* only for demonstration, should be removed */
+  height: 400px;
 }
 
-/* Clear floats after the columns */
 section::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the footer */
 footer {
   background-color: #777;
   padding: 10px;
   text-align: center;
   color: white;
+  }
+        .no-box {
+            padding-left: 30px;
+            font-size: 30px;
+        }
+ 
+        .btn {
+            background-color: rgb(179, 179, 179);
+        }
+ 
+        .btn:hover {
+            color: white;
+            background-color: green;
+}
+.button {
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #333;
+ border-radius: 5px;
 
 }
+.button:hover {
+background-color: #333;
+  color: white;
+}
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
+
 }
 </style>
 </head>
@@ -101,7 +113,7 @@ footer {
 
 <h1 style="color:White;">'s Werelds Grote Gids Naar de Discografie van Pink Floyd</h1>
 <h3 style="color:White;">Goedenmiddag, als het middag is als u dit leest.</h3>
-<p style="color:White;">Hallo, hoe gaat het met u? Mijn naam is Benny Bladblazer. Vandaag ben ik uw gids door de discorafie van Pink Floyd.<b>
+<p style="color:White;">Hallo, hoe gaat het met u? Mijn naam is Benny Bladblazer. Vandaag ben ik uw gids door de discorafie van Pink Floyd.</p>
 
 <header>
   <h2>Discografie</h2>
@@ -115,36 +127,70 @@ footer {
 </div>
 
 <section>
-
-  <nav>
-    <ul>
-      <li><a href="#piper">The Piper at the Gates of Dawn</a></li>
-      <li><a href="#saucer">A Saucerful of Secrets</a></li>
-      <li><a href="#more">More</a></li>
-      <li><a href="#umma">Ummagumma</a></li>
-      <li><a href="#atom">Atom Heart Mother</a></li>
-      <li><a href="#meddle">Meddle</a></li>
-      <li><a href="#clouds">Obscured by Clouds</a></li>
-      <li><a href="#moon">The Dark Side of the Moon</a></li>
-      <li><a href="#wish">Wish You Were Here</a></li>
-      <li><a href="#animals">Animals</a></li>
-<li><a href="#wall">The Wall</a></li>
-      <li><a href="#cut">The Final Cut</a></li>
-<li><a href="#lapse">A Momentary Lapse of Reason</a></li>
-      <li><a href="#bell">The Division Bell</a></li>
-<li><a href="#hiatus">Hiaat</a></li>
-<li><a href="#river">The Endless River</a></li>
-    </ul>
-  </nav>
-  
+ 
   <article>
     <h1>The Piper at the Gates of Dawn</h1>
-    <p>Uitgebracht in 1967, bracht het debuutalbum The Piper at the Gates of Dawn de band omhoog naar roem.</p>
-  </article>
+    <p>Uitgebracht in 1967 bracht het debuutalbum The Piper at the Gates of Dawn de band omhoog naar roem.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <div class="no-box" align="right">
+            <span class="no">1</span>
+        </div>
+ 
+        <button class="button" onclick="prev()">
+          &laquo; Previous
+        </button>
+ 
+        <button class="button" onclick="next()" style="float: right;">
+            Next &raquo;
+        </button>
+    </div>
+ 
+    <script>
+        var no_box = document
+            .querySelector('.no-box');
+             
+        var i = 1;
+ 
+        function prev() {
+            if (i == 1) {
+                document.getElementsByClassName(
+                        'prev').disabled = true;
+                document.getElementsByClassName(
+                        'next').disabled = false;
+            } else {
+                i--;
+                return setNo();
+            }
+        }
+ 
+        function next() {
+            if (i == 16) {
+            document.getElementsByClassName(
+                        'next').disabled = true;
+                document.getElementsByClassName(
+                        'prev').disabled = false;
+            } else {
+                i++;
+                return setNo();
+            }
+        }
+ 
+        function setNo() {
+            return no_box.innerHTML = i;
+        }
+    </script>
+ </article>
 </section>
 
 <footer>
-  <p>VOETEN</p>
+  <p>p</p>
 </footer>
 
 </body>
