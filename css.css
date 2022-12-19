@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+margin: 0;
+  font-family: Calibri;
+background-image: url('https://media.discordapp.net/attachments/989268312036896818/1037324066283081738/cIover_pink_floyd_10e17e02-66c0-4652-9905-18cbca42cc21.png');
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+transition-duration: 0.3s;
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #086DAA;
+  color: white;
+}
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+background-color: rgba(241,241,241,.9 );
+  height: 100%;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  }
+        .no-box {
+            padding-left: 30px;
+            font-size: 30px;
+        }
+
+        .btn {
+            background-color: rgb(179, 179, 179);
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: green;
+
+}
+.button {
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #333;
+ border-radius: 5px;
+
+}
+.button:hover {
+background-color: #333;
+  color: white;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1920px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #333;
+ border-radius: 5px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  border-radius: 3px 0 0 3px;
+  float:right;
+}
+
+.prev:hover, .next:hover {
+background-color: #333;
+  color: white;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+}
+/* The element to apply the animation to */
+h5 {
+  height:400px;
+  width:400px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=f1f37efeab&attid=0.2&permmsgid=msg-a:r-425389147096739141&th=1852b6192a19f895&view=att&disp=safe&realattid=f_lbv24tm40"); ;}
+14% {background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=f1f37efeab&attid=0.1&permmsgid=msg-a:r-425389147096739141&th=1852b6192a19f895&view=att&disp=safe&realattid=f_lbv24tml1"); ;}
+  29% {background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=f1f37efeab&attid=0.5&permmsgid=msg-a:r-425389147096739141&th=1852b6192a19f895&view=att&disp=safe&realattid=f_lbv24tn12"); ;}
+  43% {background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=f1f37efeab&attid=0.4&permmsgid=msg-a:r-425389147096739141&th=1852b6192a19f895&view=att&disp=safe&realattid=f_lbv24tnf3"); ;}
+  57% {background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=f1f37efeab&attid=0.3&permmsgid=msg-a:r-425389147096739141&th=1852b6192a19f895&view=att&disp=safe&realattid=f_lbv24tnq4"); ;}
+  71% {background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=f1f37efeab&attid=0.6&permmsgid=msg-a:r-425389147096739141&th=1852b6192a19f895&view=att&disp=safe&realattid=f_lbv24to15"); ;}
+86% {background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=f1f37efeab&attid=0.7&permmsgid=msg-a:r-425389147096739141&th=1852b6192a19f895&view=att&disp=safe&realattid=f_lbv24toc6"); ;}
+100% {background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=f1f37efeab&attid=0.2&permmsgid=msg-a:r-425389147096739141&th=1852b6192a19f895&view=att&disp=safe&realattid=f_lbv24tm40"); ;}
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
