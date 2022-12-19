@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<title>'s Werelds Grote Gids Naar de Discografie van Pink Floyd</title>
+<meta CHARSET="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<div class="class">
+<h1 style="color:White;">'s Werelds Grote Gids Naar de Discografie van Pink Floyd</h1>
+<h3 style="color:White;">Goedenmiddag, als het middag is als u dit leest.</h3>
+
+<header>
+  <h2>Discografie</h2>
+</header>
+
+<div class="topnav">
+  <a href="index.html">Studioalbums</a>
+  <a href="unreleased.html">Galerij</a>
+  <a class="active" href="band.html">Bandleden</a>
+  <a href="contact.html">Contact</a></div>
+
+<section>
+  <article>
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+      <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgxMTMwODE1ODM5Njc1NDgw/gettyimages-85510803.jpg" style="height:300px">
+      <h1>Syd Barrett - Gitaar, zang</h1>
+      <p>Barrett's creatieve ziel had de band op zijn benen laten staan. Jammer genoeg bleef Barrett niet lang in de band. Na twee albums werd Barrett te misgeleid door te veel gebruik aan LSD. Syd is overleden in 2006</p>
+     </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+      <img src="https://images.saymedia-content.com/.image/t_share/MTc2MjY0MjU3NjUzMjUzMzEw/roger-waters-a-brief-glimpse-into-a-tortured-soul.jpg" style="height:300px">
+      <h1>Roger Waters - Basgitaar, zang</h1>
+      <p>Waters was na Barrett de frontman van Pink Floyd geworden. Waters had altijd grandiose ideëen maar zijn sterke karakter kwam niet altijd samen met de band.</p>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+      <img src="https://rock101online.mx/wp-content/uploads/2019/07/Rick-Wright.jpg" style="height:300px">
+      <h1>Richard Wright - Keyboard, zang</h1>
+      <p>Wright kon van alles spelen zolang er toetsen op zaten. Van klavecimbel tot orgel. Wright is overleden in 2006.</p>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+      <img src="https://lastfm.freetls.fastly.net/i/u/770x0/d74c55e8faed4c2abd545f477d72a5db.jpg" style="height:300px">
+      <h1>Nick Mason - Drums</h1>
+      <p>Nick Mason, het "stilste" lid was de enige die nooit zong. Maar ook was Mason een onmisbaar stuk van Pink Floyd.</p>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+      <img src="https://m.media-amazon.com/images/M/MV5BODdhY2ZjY2UtYjY0NC00NTAxLWIwYzEtN2Y1ZjEyMWQ2MDJhXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg" style="height:300px">
+      <h1>David Gilmour - Gitaar, zang</h1>
+      <p>David Gilmour was een creative gitarist, en vond allerlei verschillende gitaarspellen uit.</p>
+    </div>
+
+  <button class="prev" onclick="plusSlides(-1)">
+          &laquo; Previous
+        </button>
+
+        <button class="next" onclick="plusSlides(1)" style="float: right;">
+            Next &raquo;
+        </button>
+</article>
+</section>
+
+    <script>
+    let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(i) {
+  showSlides(slideIndex += i);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";}
+slides[slideIndex-1].style.display = "block";}
+
+</script>
+
+ </article>
+</section>
+
+</body>
+</html>
