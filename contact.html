@@ -27,8 +27,8 @@
 
 <section>
   <article>
-    <h4>Heeft u nog tips voor deze site of heeft u klachten? Mail dan naar een e-mailadres naar keuze.
-    Email:  
+    <h4>Heeft u nog tips voor deze site of heeft u klachten? Mail ons!
+ <br><br>   Email-adres:  
 <input type="text" name="Name">  
 <br> <br>  
       Betreft:  
@@ -36,8 +36,21 @@
     <br> <br>  
 Bericht:  
 <input type="text" name="Course">  </h4>
+    
+
+  <div class="popup" onclick="myFunction()"><button>Verstuur
+      <span class="popuptext" id="myPopup">Verzonden!</span>
+  </button></div>
+
+  <script>
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
     <h5></h5>
 
+    
 </section>
  </article>
 </section>
